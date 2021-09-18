@@ -1,0 +1,22 @@
+{
+  "blurb": "Make a chain of dominoes.",
+  "authors": [
+    "juhlig"
+  ],
+  "contributors": [
+    "ErikSchierboom",
+    "iHiD",
+    "NobbZ"
+  ],
+  "files": {
+    "solution": [
+      "src/dominoes.erl"
+    ],
+    "test": [
+      "test/dominoes_tests.erl"
+    ],
+    "example": [
+      ".meta/example.erl"
+    ]
+  }
+}

@@ -61,7 +61,6 @@ set_right(#zipper{focus = Focus} = Zipper, Value) ->
 left(#zipper{focus = #tree{left = nil}}) ->
     nil;
 left(#zipper{trail = Trail, focus = Focus} = Zipper) ->
-    io:format("Going left... Trail: ~p, focus: ~p, left: ~p~n", [Trail, Focus, Focus#tree.left]),
     Zipper#zipper{trail = [{left, Focus} | Trail], focus = Focus#tree.left}.
 
 -spec right(#zipper{}) -> #zipper{} | nil.
